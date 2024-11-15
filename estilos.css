@@ -1,0 +1,254 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;     
+}
+
+
+
+.roboto-condensed {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+ /* font-weight: <weight>;  */
+  font-style: normal;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    width: 1080px;
+    margin: 0 auto; /* Centrar el cuerpo de la página */
+}
+
+/* Header */
+header {
+    width: 1080px;
+    height: 190px;
+ /*   background-color: #0073b1;    */
+    color: white;   
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+background: linear-gradient(to right, #1d71b8, #003595);
+}
+
+/* Cabecera */
+.cabecera {
+    display: flex;
+    align-items: flex-start;
+    height: 150px;
+ /*   padding: 0 10px;  */
+
+}
+
+/* Logo UAS */
+.logo-uas {
+    margin-left: 16px;
+    background-color: #004a75;
+    color: white;
+    width: 100px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: skew(-6.5deg); /* Inclinación de 6.5° */
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Sección de Facultad y Universidad */
+.seccion-facultad {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 100px); /* Resto del espacio después del logo UAS */
+    padding-left: 10px;
+}
+
+/* Nombre de la Facultad */
+.nombre-facultad {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    font-weight: normal;
+}
+
+.nombre-facultad h1 {
+    font-size: 1.8em;
+    margin-right: auto;
+    font-weight: normal;
+}
+
+/* Logos Facultad y Visión */
+.logos {
+    display: flex;
+    gap: 10px;
+
+}
+
+.logo-facultad, .logo-vision {
+    background-color: #004a75;
+    color: white;
+    margin-right:10px;
+    margin-left:-10px;
+    width: 170px;
+    height: 120px;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    transform: skew(-6.5deg); /* Inclinación de 6.5° */
+    font-weight: bold;
+    text-align: right;
+
+
+}
+
+
+
+/* Nombre de la Universidad */
+.nombre-universidad {
+    height: 30px;
+    text-align: center;
+    align-content: center;
+    padding-left: 10px;
+    font-size: 1.4em;
+    color: #fff;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 3px; 
+    background: linear-gradient(to right, #003595, #1d71b8);
+}
+
+/* Menú de navegación */
+nav {
+    width: 1080px;
+    height: 40px;
+background-color: #b89d2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Anuncios relevantes */
+.anuncios-relevantes {
+    background-color: #e1f5fe;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Noticias y convocatorias */
+.noticias-convocatorias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.noticias, .convocatorias {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Servicios */
+.servicios {
+    background-color: #e1f5fe;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.icono-servicio {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    line-height: 100px;
+    color: #0073b1;
+    font-weight: bold;
+}
+
+/* Pie de página */
+footer {
+    width: 1080px;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enlaces-importantes {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.enlaces-importantes div {
+    background-color: #0073b1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-logo {
+    background-color: #f1ebd5;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.footer-logo .logo-uas-footer, .footer-logo .lema-institucion, .footer-logo .logo-vision-footer {
+    background-color: #f1ebd5;
+    color: rgb(155, 151, 151);
+    text-align: center;
+}
+
+.logo-uas-footer{
+    transform: skew(-6.5deg); /* Inclinación de 6.5° */
+}
+
+.logo-vision-footer{
+    transform: skew(-6.5deg); /* Inclinación de 6.5° */
+}
+
+.lema-institucion{
+    font-weight: bold;
+}
